@@ -33,3 +33,15 @@ def vecSubtract(vector01,vector02):
 vector01=[1,2,3,4]
 vector02=[3,4,5]
 print(vecSubtract(vector01,vector02))
+
+#Number 3
+def scalarVecMulti(scalar,vector):
+  x = []
+  for i in range(len(vector)):
+    x.append(vector[i]*scalar)
+  return x
+
+vector = [1,2,3]
+scalar = 3
+
+print(scalarVecMulti(scalar,vector))
