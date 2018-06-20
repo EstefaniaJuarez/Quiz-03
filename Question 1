@@ -1,14 +1,17 @@
 def dot(vector01,vector02):
-  n = len(vector01[0])
+  n = len(vector01)
   p = len(vector02)
   if n==p:
     x=0
     for i in range(len(vector01)):
-      for j in range(len(vector02)):
+      x += vector01[i]*vector02[i]
+    return x 
   else:
-    return "invalid input"
+    print("invalid input")
+    return None
 
-vector01=[[1,2],[4,5]]
-vector02=[[7,8,9],[10,11,12],[3,4,5]]
+
+vector01=[1,2,3,4]
+vector02=[3,4,5]
 
 print(dot(vector01,vector02))
