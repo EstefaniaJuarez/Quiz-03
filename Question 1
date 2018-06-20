@@ -1,0 +1,14 @@
+def dot(vector01,vector02):
+  n = len(vector01[0])
+  p = len(vector02)
+  if n==p:
+    x=0
+    for i in range(len(vector01)):
+      for j in range(len(vector02)):
+  else:
+    return "invalid input"
+
+vector01=[[1,2],[4,5]]
+vector02=[[7,8,9],[10,11,12],[3,4,5]]
+
+print(dot(vector01,vector02))
