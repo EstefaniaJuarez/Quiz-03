@@ -11,7 +11,7 @@ def dot(vector01,vector02):
     return None
 
 
-vector01=[1,2,3,4]
+vector01=[1,2,3]
 vector02=[3,4,5]
 
 print(dot(vector01,vector02))
