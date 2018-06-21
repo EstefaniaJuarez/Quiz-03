@@ -45,3 +45,29 @@ vector = [1,2,3]
 scalar = 3
 
 print(scalarVecMulti(scalar,vector))
+
+#Question 4
+import math
+def infNorm(vector):
+  x=0
+  for i in range(len(vector)):
+    if abs(vector[i]) > x:
+      x= abs(vector[i])
+    return x
+
+vector=[-10,2,3,4]
+
+#print(infNorm(vector))
+
+#Question 5
+def two_norm(vector):
+  x = 0
+  new_vector = []
+  for i in range(len(vector)):
+    x +=(vector[i])**2
+  return math.sqrt(x)
+  new_vector.append(vector[i]/math.sqrt(x))
+  return new_vector
+  
+vector=[1,2,3]
+print(two_norm(vector))
