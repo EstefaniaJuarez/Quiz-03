@@ -23,6 +23,7 @@ vector02=[3,4,5]
 vector01_invalid[5,6,7,8]
 vector02_invalid[3,2,1]
 print(dot(vector01,vector02))
+#print(dot(vector01_invalid,vector02_invalid))
 
 #Number 2
 def vecSubtract(vector03,vector04):
@@ -49,6 +50,7 @@ vector04=[3,4,5]
 vector03_valid=[10,20,30]
 vector04_valid=[5,10,20]
 print(vecSubtract(vector03,vector04))
+#print(vecSubtract(vector03_valid,vector04_valid))
 
 #Number 3
 def scalarVecMulti(scalar1,vector05):
@@ -69,6 +71,7 @@ vector05_invalid="Texas Tech"
 scalar1=10
 
 print(scalarVecMulti(scalar1,vector05))
+#print(scalarVecMulti(scalar1,invalid))
 
 #Question 4
 import math
