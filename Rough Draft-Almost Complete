@@ -1,0 +1,95 @@
+#Number 1
+def dot(vector01,vector02):
+  '''
+  This function takes in two vectors as its inputs and produces the resulting dot product. The dot product is computed by multiplying corresponding elements of each vector. Once the multiplication is complete, the numbers are then added together, resulting in an integer.
+  '''
+  n = len(vector01)
+  p = len(vector02)
+  #The following line is checking that the length of both vectors is equal to ensure that multiplication is possible
+  if n==p:
+    x=0
+    #This for loop is taking each  corresponding element, multiplying them, and adding them together for the final integer.
+    for i in range(len(vector01)):
+      x += vector01[i]*vector02[i]
+    return x 
+  else:
+    print("invalid input")
+    return None
+
+#These are the test vectors
+vector01=[1,2,3]
+vector02=[3,4,5]
+print(dot(vector01,vector02))
+
+#Number 2
+def vecSubtract(vector01,vector02):
+  '''
+The function vecSubtract takes in two vectors and returns the difference of the two. After the difference of each pair of corresponding elements has been computed, it then takes the number and puts it in a new list to return the updated vector.
+  '''
+  n = len(vector01)
+  p = len(vector02)
+  if n==p:
+    x=[]
+    #this for loop subtracts the two elements and then appends the difference into the new vector, x
+    for i in range(len(vector01)):
+      x.append(vector01[i]-vector02[i])
+    return x
+  else:
+    print("invalid input")
+    return None
+
+#These are the test vectors
+vector01=[1,2,3,4]
+vector02=[3,4,5]
+print(vecSubtract(vector01,vector02))
+
+#Number 3
+def scalarVecMulti(scalar,vector):
+  '''
+  This function takes in a scalar and vector as its inputs. The scalar is multiplied to each element of the vector. The result is then placed into the new vector, x.
+  '''
+  x = []
+  #This for loop takes the multiplication of each element of the vector and the scalar and appends the product to new vector x.
+  for i in range(len(vector)):
+    x.append(vector[i]*scalar)
+  return x
+
+#The following are test vectors
+vector = [1,2,3]
+scalar = 3
+
+print(scalarVecMulti(scalar,vector))
+
+#Question 4
+import math
+def infNorm(vector):
+  '''
+  This function takes in a vector and produces the norm of the vector using the infinity norm. The infinity norm takes the absolute value of each element in the vector. It results in the maximum element value of the vector, after the absolute value has been taken.
+  '''
+  x=0
+  for i in range(len(vector)):
+    #This line is taking the absolute value of each element in the vector with the condition of it being greater than 0. It then takes the maximum value of the elements and returns it.
+    if abs(vector[i]) > x:
+      x= abs(vector[i])
+    return x
+
+#These are the test vectors
+vector=[-10,2,3,4]
+
+print(infNorm(vector))
+
+#Question 5
+def two_norm(vector):
+  '''
+  This function takes a vector, calculates the norm of the vector, and then normalizes the original vector by dividing each element by the norm. The result is the normalized vector using the infinity norm.  
+  '''
+  x = 0
+  new_vector = []
+  for i in range(len(vector)):
+    x +=(vector[i])**2
+  return math.sqrt(x)
+  new_vector.append(vector[i]/math.sqrt(x))
+  return new_vector
+  
+vector=[1,2,3]
+print(two_norm(vector))
