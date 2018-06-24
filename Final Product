@@ -19,10 +19,10 @@ def dot(vector01,vector02):
 #This is test 1 that passes
 vector01=[1,2,3]
 vector02=[3,4,5]
-#This is test 2 that returns invalid input
-vector01_invalid[5,6,7,8]
-vector02_invalid[3,2,1]
 print(dot(vector01,vector02))
+#This is test 2 that returns invalid input
+#vector01_invalid[5,6,7,8]
+#vector02_invalid[3,2,1]
 #print(dot(vector01_invalid,vector02_invalid))
 
 #Number 2
@@ -45,11 +45,10 @@ The function vecSubtract takes in two vectors and returns the difference of the 
 #This is test 1 that returns invalid input
 vector03=[1,2,3,4]
 vector04=[3,4,5]
-
-#This is test 2 that returns the difference vector
-vector03_valid=[10,20,30]
-vector04_valid=[5,10,20]
 print(vecSubtract(vector03,vector04))
+#This is test 2 that returns the difference vector
+#vector03_valid=[10,20,30]
+#vector04_valid=[5,10,20]
 #print(vecSubtract(vector03_valid,vector04_valid))
 
 #Number 3
@@ -66,12 +65,11 @@ def scalarVecMulti(scalar1,vector05):
 #This is test 1 that works
 vector05 = [1,2,3]
 scalar1 = 3
-#This is test 2 that breaks
-vector05_invalid="Texas Tech"
-scalar1=10
-
 print(scalarVecMulti(scalar1,vector05))
-#print(scalarVecMulti(scalar1,invalid))
+#This is test 2 that breaks
+#vector05_invalid="Texas Tech"
+#scalar1=10
+#print(scalarVecMulti(scalar1,vector05_invalid))
 
 #Question 4
 import math
@@ -88,10 +86,10 @@ def infNorm(vector06):
 
 #This is test 1 that passes
 vector06=[-10,2,3,13]
-#This is test 2 that fails
-vector06_invalid=10,20,30
-
 print(infNorm(vector06))
+#This is test 2 that fails
+#vector06_invalid=10,20,30
+#print(infNorm(vector06_invalid)
 
 #Question 5
 def normalize(vector07):
@@ -110,4 +108,5 @@ vector07=[1,2,3,13]
 print(normalize(vector07))
 
 #This is test 2 that fails
-vector07_invalid="Red Raiders"
+#vector07_invalid="Red Raiders"
+#print(normalize(vector07_invalid))
