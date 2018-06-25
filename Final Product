@@ -28,7 +28,7 @@ print(dot(vector01,vector02))
 #Number 2
 def vecSubtract(vector03,vector04):
   '''
-The function vecSubtract takes in two vectors and returns the difference of the two. After the difference of each pair of corresponding elements has been computed, it then takes the number and puts it in a new list to return the updated vector.
+  The function vecSubtract takes in two vectors and returns the difference of the two. After the difference of each pair of corresponding elements has been computed, it then takes the number and puts it in a new list to return the updated vector.
   '''
   n = len(vector03)
   p = len(vector04)
@@ -93,10 +93,10 @@ print(infNorm(vector06))
 
 #Question 5
 def normalize(vector07):
-  norm = infNorm(vector07)
   '''
   This function takes a vector and calculates the normalized vector.The norm of vector has been calculated in question 4 and is being referenced for this question. Then, the normalized vector is calculated by dividing each element in the specified vector by the norm using the infinity norm.  
   '''
+  norm = infNorm(vector07)
   x = []
   #This for loop divides each element of vector07 and divides it by the norm of vector07. It then appends the number to the new normalized vector, x.
   for i in range(len(vector07)):
